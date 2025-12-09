@@ -1,4 +1,4 @@
-public class Voiture extends Vehicule {
+public class Voiture extends Vehicule implements Motorisable {
 
     public Voiture() {
         super("DEFAUT", 1000);
@@ -19,5 +19,10 @@ public class Voiture extends Vehicule {
 
     public void reculer() {
         System.out.println("La voiture recule !");
+    }
+
+    @Override
+    public void demarrer() {
+        System.out.println("La voiture démarre !");
     }
 }
