@@ -9,7 +9,7 @@ public class AppRappels {
 
         Vehicule voiture = new Voiture("Renault", 1200);
         Vehicule moto = new Moto();
-        Velo velo = new Velo();
+        Velo velo = Velo.creerVelo();
         List<Vehicule> vehicules = new ArrayList<>();
 
         vehicules.add(voiture);
